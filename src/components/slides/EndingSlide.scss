@@ -1,0 +1,17 @@
+.ending-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    color: #e3e3e3;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .logo {
+    margin-top: 60px;
+    width: 200px;
+    height: 70px;
+  }
+}
