@@ -26,6 +26,17 @@ const CRM = props => {
         questions={props.initialData.questions}
         slidePos={slidePos}
       />
+      <Main 
+        questions={props.initialData.questions}
+        slidePos={handleSlidePos}
+        setOutput={handleSetOutput}
+        logoUrl={props.initialData.logoUrl}
+      />
+      <Footer 
+        slidePos={slidePos}
+        slideNumber={props.initialData.questions.length}
+        logoUrl={props.initialData.logoUrl}
+      />
     </>
   )
 }
