@@ -1,0 +1,41 @@
+.dots {
+  display: flex;
+  position: relative;
+  direction: ltr;
+  animation: fade 0.1s;
+
+  .dot {
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+    border-radius: 50%;
+    transition: 0.3s;
+  }
+
+  .dot:last-child {
+    margin-right: 0px;
+  }
+
+  .line {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(0%, -50%);
+    width: 0px;
+    height: 7px;
+    background: linear-gradient(to right, #f08a5d, #b83b5e);
+    border-radius: 0px;
+    transition: 0.3s;
+    z-index: -1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
