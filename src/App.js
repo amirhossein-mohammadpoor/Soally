@@ -1,13 +1,13 @@
 import React from 'react'
 import "./App.scss"
 import CRM from "./containers/CRM"
-import initialData from "./questions/questions"
+import questions from "./questions/questions.json"
 
 const App = () => {
 
   return (
     <div className="App">      
-      <CRM initialData={initialData} />
+      <CRM initialData={questions} />
     </div>
   )
 }
