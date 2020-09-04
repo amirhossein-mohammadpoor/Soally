@@ -1,6 +1,6 @@
 import React from "react"
 import "./Footer.scss"
-import BrandSection from "../../components/BrandSection"
+import BrandSection from "../../components/BrandSection/BrandSection"
 
 const Footer = props => {
   return (

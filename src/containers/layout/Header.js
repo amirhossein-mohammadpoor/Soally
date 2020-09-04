@@ -1,6 +1,6 @@
 import React from "react"
 import "./Header.scss"
-import Indicator from "../../components/indicator"
+import Indicator from "../../components/Indicator/Indicator"
 
 const Header = props => {
   return (

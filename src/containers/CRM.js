@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import Header from "./layout/Header"
 import Main from "./layout/Main"
 import Footer from "./layout/Footer"
-import Bg from "../components/Bg"
+import Bg from "../components/Bg/Bg"
 
 const CRM = props => {
   const [slidePos, setSlidePos] = useState(0)

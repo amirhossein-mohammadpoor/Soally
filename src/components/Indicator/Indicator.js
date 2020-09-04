@@ -1,5 +1,5 @@
 import React from "react"
-import "./indicator.scss"
+import "./Indicator.scss"
 
 const Header = props => {
   let lineWidth
