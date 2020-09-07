@@ -8,6 +8,11 @@
   src: url("/fonts/SignPainter-HouseScript.ttf")
 }
 
+body {
+  margin: 0;
+  direction: rtl;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
