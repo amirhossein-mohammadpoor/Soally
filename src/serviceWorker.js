@@ -1,6 +1,6 @@
-import { precacheAndRoute } from 'workbox-precaching';
-import { registerRoute } from 'workbox-routing'
-import { StaleWhileRevalidate } from 'workbox-strategies'
+// import { precacheAndRoute } from 'workbox-precaching'
+// import { registerRoute } from 'workbox-routing'
+// import { StaleWhileRevalidate } from 'workbox-strategies'
 
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||

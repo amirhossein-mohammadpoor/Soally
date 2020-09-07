@@ -57,7 +57,6 @@ const Main = props => {
 
   return (
     <main>
-
       <Slider ref={sliderRef} {...settings}>
         <StartingSlide
           start={handleStart}

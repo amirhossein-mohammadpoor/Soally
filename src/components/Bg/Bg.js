@@ -3,7 +3,7 @@ import "./Bg.scss"
 
 const Bg = props => {
   return (
-    <div className="bg" style={{backgroundImage: `url(${props.backgroundUrl})`}}></div>
+    <div className="bg" style={{backgroundImage: `url(/images/Bg.jpg)`}}></div>
   )
 }
 

@@ -1,6 +1,6 @@
 import React from "react"
 import "./QuestionSlide.scss"
-import OptionButton from "./OptionButton"
+import OptionButton from "../Buttons/OptionButton"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Row } from "reactstrap"
 

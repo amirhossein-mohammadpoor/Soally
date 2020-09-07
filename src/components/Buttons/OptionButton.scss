@@ -1,0 +1,16 @@
+.option-buttons {
+  direction: rtl;
+
+  button {
+    background-color: #df5e88;
+    color: #e3e3e3;
+    border: 0;
+    border-radius: 44px;
+    padding: 8px 12px;
+    font-size: 15px;
+  }
+
+  button:nth-child(2) {
+    margin: 0px 30px;
+  }
+}
