@@ -12,7 +12,7 @@ const BrandSection = props => {
             {
               (props.slidePos === props.slideNumber + 1) ?
                 <div className="d-flex d-sm-none justify-content-center">
-                  <img src={props.logoUrl} alt="logo" className="logo" />
+                  <img src={"/images/logo.png"} alt="logo" className="logo" />
                 </div>
                 :
                 null
@@ -25,7 +25,7 @@ const BrandSection = props => {
           :
           <Row className="px-3">
             <Col xs="12" sm="6" className="d-flex justify-content-center justify-content-sm-start p-0">
-              <img src={props.logoUrl} alt="logo" className="logo" />
+              <img src={"/images/logo.png"} alt="logo" className="logo" />
             </Col>
             <Col xs="12" sm="6" className="p-0">
               <div className="d-flex justify-content-center justify-content-sm-end">
