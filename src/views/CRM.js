@@ -3,6 +3,7 @@ import Header from "../containers/layout/Header"
 import Main from "../containers/layout/Main"
 import Footer from "../containers/layout/Footer"
 import Bg from "../components/Bg/Bg"
+import questions from "../questions/questions.json"
 
 const CRM = props => {
   const [slidePos, setSlidePos] = useState(0)
@@ -15,27 +16,27 @@ const CRM = props => {
   const handleSetOutput = result => {
     output.push(result)
     setOutput([...output])
-    if (slidePos === props.initialData.questions.length)
+    if (slidePos === questions.questions.length)
       console.log("answers:", output)
   }
 
   return (
     <>
-      <Bg backgroundUrl={props.initialData.backgroundUrl} />
+      <Bg backgroundUrl={questions.backgroundUrl} />
       <Header 
-        questions={props.initialData.questions}
+        questions={questions.questions}
         slidePos={slidePos}
       />
       <Main 
-        questions={props.initialData.questions}
+        questions={questions.questions}
         slidePos={handleSlidePos}
         setOutput={handleSetOutput}
-        logoUrl={props.initialData.logoUrl}
+        logoUrl={questions.logoUrl}
       />
       <Footer 
         slidePos={slidePos}
-        slideNumber={props.initialData.questions.length}
-        logoUrl={props.initialData.logoUrl}
+        slideNumber={questions.questions.length}
+        logoUrl={questions.logoUrl}
       />
     </>
   )
