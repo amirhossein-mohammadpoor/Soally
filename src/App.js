@@ -1,9 +1,9 @@
 import React from 'react'
 import "./App.scss"
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import CRM from "./containers/CRM"
+import CRM from "./views/CRM"
 import questions from "./questions/questions.json"
-import InstallBanner from "./components/InstallBanner/InstallBanner"
+import InstallBanner from "./views/InstallBanner/InstallBanner"
 
 const App = () => {
 
@@ -12,8 +12,8 @@ const App = () => {
       <Router>
         <Switch>
           <Route exact path="/" render={() => <CRM initialData={questions} />} />
-          <Route exact path="/install_banner" compoenet={InstallBanner} />
-          <Route render={() => <h1>!! Not Found</h1>} />
+          <Route exact path="/install_banner" component={InstallBanner} />
+          <Route render={() => <h1>صفحه مورد نظر پیدا نشد !</h1>} />
         </Switch>
       </Router>
     </div>

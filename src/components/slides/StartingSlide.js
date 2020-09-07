@@ -7,7 +7,7 @@ const StartingSlide = props => {
     <div className="starting-slide">
       <h1>فرم نظرسنجی و ارتقا سطح خدمت رسانی</h1>
       <img src={props.logoUrl} alt="logo" className="logo" />
-      <StartButton start={props.start} />
+      <StartButton function={props.start} buttonText={"شروع"}/>
     </div>
   )
 }

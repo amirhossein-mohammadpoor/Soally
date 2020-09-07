@@ -3,7 +3,12 @@ import "./StartButton.scss"
 
 const StartButton = props => {
   return (
-    <button className="start-button" onMouseUp={props.start}>شروع</button>
+    <button 
+      className="start-button"
+      onMouseUp={props.function}
+    >
+      {props.buttonText}
+    </button>
   )
 }
 
