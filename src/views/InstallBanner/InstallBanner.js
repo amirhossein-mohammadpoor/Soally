@@ -9,7 +9,7 @@ const InstallBanner = () => {
   const [deferredPrompt, setDeferredPrompt] = useState(null)
   const history = useHistory()
 
-  window.addEventListener('beforeinstallprompt', function (event) {
+  window.addEventListener('beforeinstallprompt', event => {
     console.log('beforeinstallprompt fired');
     event.preventDefault();
     setDeferredPrompt(event)
@@ -20,7 +20,7 @@ const InstallBanner = () => {
     if (deferredPrompt) {
       deferredPrompt.prompt();
 
-      deferredPrompt.userChoice.then(function (choiceResult) {
+      deferredPrompt.userChoice.then(choiceResult => {
         console.log(choiceResult.outcome);
 
         if (choiceResult.outcome === 'dismissed') {
@@ -41,7 +41,8 @@ const InstallBanner = () => {
       <Bg />
       <div></div>
       <div className="center-section">
-        <h2>نصب اپلیکشن CRM در موبایل</h2>
+        <h2>نصب اپلیکشن Soally در موبایل</h2>
+        <p>اگر با زدن دکمه نصب بنر نصب برایتان ظاهر نشد صفحه را مجددا رفرش کنید</p>
         <StartButton
           function={handleGoBack}
           buttonText={"باز گشت"}

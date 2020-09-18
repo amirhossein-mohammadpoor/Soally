@@ -1,6 +1,7 @@
+import React from "react"
 import CRM from "../views/CRM"
-import InstallBanner from "../views/InstallBanner/InstallBanner"
 import NotFound from "../views/NotFound"
+const InstallBanner = React.lazy(() => import("../views/InstallBanner/InstallBanner"))
 
 const routes = [
   {
@@ -9,12 +10,14 @@ const routes = [
     component: CRM,
   },
   {
+    exact: true,
     path: "/install_banner",
     component: InstallBanner,
+    lazy: true
   },
   {
     exact: false,
-    path: "",
+    path: "*",
     component: NotFound
   }
 ]

@@ -1,7 +1,3 @@
-// import { precacheAndRoute } from 'workbox-precaching'
-// import { registerRoute } from 'workbox-routing'
-// import { StaleWhileRevalidate } from 'workbox-strategies'
-
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
   // [::1] is the IPv6 localhost address.
@@ -131,10 +127,3 @@ export function unregister() {
       });
   }
 }
-
-// registerRoute(
-//   '/images/bg.jpg',
-//   new StaleWhileRevalidate({
-//     cacheName: 'images'
-//   })
-// )
