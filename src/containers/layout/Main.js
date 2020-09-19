@@ -63,8 +63,8 @@ const Main = props => {
           logoUrl={props.logoUrl}
         />
         {
-          props.questions.map((question, index) => {
-            return <QuestionSlide
+          props.questions.map((question, index) => (
+            <QuestionSlide
               key={index}
               text={question.text}
               options={question.options}
@@ -72,7 +72,7 @@ const Main = props => {
               next={handleStart}
               setOutput={HANDLE_SET_OUTPUT}
             />
-          })
+          ))
         }
         <EndingSlide />
       </Slider>

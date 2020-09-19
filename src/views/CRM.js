@@ -21,7 +21,7 @@ const CRM = props => {
   }
 
   return (
-    <>
+    <React.Fragment>
       <Bg backgroundUrl={questions.backgroundUrl} />
       <Header 
         questions={questions.questions}
@@ -38,7 +38,7 @@ const CRM = props => {
         slideNumber={questions.questions.length}
         logoUrl={questions.logoUrl}
       />
-    </>
+    </React.Fragment>
   )
 }
 
