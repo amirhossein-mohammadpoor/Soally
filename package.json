@@ -16,13 +16,15 @@
     "react-slick": "^0.27.1",
     "reactstrap": "^8.5.1",
     "slick-carousel": "^1.8.1",
+    "workbox-cacheable-response": "^5.1.4",
+    "workbox-expiration": "^5.1.4",
     "workbox-precaching": "^5.1.4",
     "workbox-routing": "^5.1.4",
     "workbox-strategies": "^5.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -41,5 +43,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "react-app-rewired": "^2.1.6",
+    "workbox-webpack-plugin": "^5.1.4"
+  }
 }
